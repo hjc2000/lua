@@ -23,7 +23,7 @@ target_import_src(${ProjectName})
 # target_import_nlohmann_json(${ProjectName} PUBLIC)
 
 if(platform STREQUAL "msys")
-	set(exe_name "lua-interpreter")
+	set(exe_name "lua")
 	add_executable(${exe_name} ${CMAKE_CURRENT_SOURCE_DIR}/exe/lua.c)
 
 	target_link_libraries(${ProjectName} PUBLIC -Wl,--start-group)
